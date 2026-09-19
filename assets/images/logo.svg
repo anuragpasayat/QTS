@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" width="280" height="64" fill="none">
+  <rect width="280" height="64" rx="8" fill="transparent"/>
+  <!-- Emblem: Shield with Q, Rupee symbol, and growth bars -->
+  <g transform="translate(10, 8)">
+    <path d="M24 2L42 9V24C42 35.5 34.3 46.1 24 49C13.7 46.1 6 35.5 6 24V9L24 2Z" fill="#0F294A"/>
+    <path d="M24 5L39 11.2V23.5C39 33.2 32.6 42.1 24 44.8C15.4 42.1 9 33.2 9 23.5V11.2L24 5Z" fill="#1E40AF"/>
+    <!-- Growth bar accent -->
+    <path d="M16 28L21 21L27 26L32 17" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="32" cy="17" r="2" fill="#F59E0B"/>
+    <!-- Pillar line -->
+    <path d="M24 29V37M18 33V37M30 31V37" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Text Brand -->
+  <text x="64" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#0F294A" letter-spacing="-0.3">QUALITY TAX</text>
+  <text x="64" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#2563EB" letter-spacing="1.2">SERVICE &amp; CONSULTANCY</text>
+  <text x="64" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="8.5" fill="#64748B">CHENNAI • MADURAI • AMBUR • COIMBATORE</text>
+</svg>
