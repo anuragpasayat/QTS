@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Under Construction | Quality Tax Service</title>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+  <meta name="description" content="This section is currently under construction. Our Chartered Accountancy and tax advisory services remain available across Chennai, Madurai, Ambur, and Coimbatore.">
+
+  <!-- Google Fonts & Material Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <!-- Standard Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .construction-hero {
+      min-height: calc(100vh - 14rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+      background: radial-gradient(circle at 50% 20%, rgba(55, 85, 195, 0.08) 0%, transparent 70%), var(--surface);
+    }
+    .construction-card {
+      max-width: 38rem;
+      width: 100%;
+      background-color: var(--surface-container-lowest);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-2xl);
+      padding: clamp(1.75rem, 5vw, 3rem);
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .construction-icon-halo {
+      width: 5.5rem;
+      height: 5.5rem;
+      border-radius: var(--radius-full);
+      background: linear-gradient(135deg, rgba(234, 179, 8, 0.18), rgba(245, 158, 11, 0.28));
+      color: #b45309;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 10px rgba(245, 158, 11, 0.08);
+      animation: pulseGlow 2.5s infinite ease-in-out;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 8px rgba(245, 158, 11, 0.08); }
+      50% { transform: scale(1.05); box-shadow: 0 0 0 14px rgba(245, 158, 11, 0.16); }
+    }
+    .construction-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      background-color: #fef3c7;
+      color: #92400e;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .construction-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      width: 100%;
+      padding-top: 0.5rem;
+    }
+    .construction-actions a {
+      flex: 1 1 12rem;
+      max-width: 16rem;
+    }
+    .chamber-mini-strip {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: var(--radius-xl);
+      background-color: var(--surface-container-low);
+      border: 1px solid var(--border-light);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      text-align: left;
+    }
+    @media (min-width: 640px) {
+      .chamber-mini-strip {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .chamber-mini-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .chamber-mini-city {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .chamber-mini-loc {
+      font-size: 0.6875rem;
+      color: var(--on-surface-variant);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Fixed Header -->
+  <header class="site-header pt-safe">
+    <!-- Top Contact & Branch Strip -->
+    <div class="header-top-bar">
+      <div class="flex items-center gap-2">
+        <a href="tel:+918778949661" class="header-top-bar-phone header-top-bar-contact">
+          <span class="material-symbols-outlined text-[14px]" style="color: var(--tertiary-fixed-dim);">call</span>
+          <span>+91 87789 49661</span>
+        </a>
+        <span class="header-top-bar-divider" style="color: var(--outline-variant);">|</span>
+        <span class="header-top-bar-hours">
+          <span class="material-symbols-outlined text-[13px] text-mobile" style="color: var(--tertiary-fixed-dim);">schedule</span>
+          <span class="text-desktop">Mon - Sat: 9:30 AM - 7:30 PM</span>
+          <span class="text-mobile">9:30 AM - 7:30 PM</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-1">
+        <span class="top-bar-branches">
+          <span class="text-desktop">Chennai • Madurai • Ambur • Coimbatore</span>
+          <span class="text-mobile">
+            <span class="material-symbols-outlined text-[12px]">location_on</span>4 TN Chambers
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="header-main-nav">
+      <div class="brand-group">
+        <button aria-label="Toggle Navigation Menu" class="icon-button" onclick="toggleMobileDrawer()" type="button">
+          <span class="material-symbols-outlined text-[26px]">menu</span>
+        </button>
+        <a href="index.html" class="flex items-center gap-2">
+          <img alt="Quality Tax Service Brand Logo" class="brand-logo-img" src="assets/images/QTS-logo-noBG.png">
+          <div class="brand-text">
+            <span class="brand-title">Quality Tax</span>
+            <span class="brand-subtitle">Chartered Advisory</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <div class="avatar-circle" style="background-color: var(--primary); color: #fff; width: 2rem; height: 2rem;">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </div>
+        <a class="btn-call-ca" href="tel:+918778949661">
+          <span class="material-symbols-outlined text-[18px]">support_agent</span>
+          <span>Call CA</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Out Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-drawer" onclick="if(event.target === this) toggleMobileDrawer()">
+    <div class="mobile-nav-drawer">
+      <div class="mobile-nav-header">
+        <div class="flex items-center gap-2">
+          <img alt="Quality Tax Service Brand Logo" class="brand-logo-img" src="assets/images/QTS-logo-noBG.png">
+          <span class="font-headline-sm font-bold text-primary">Quality Tax</span>
+        </div>
+        <button class="icon-button" onclick="toggleMobileDrawer()">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <div class="mobile-nav-links">
+        <a class="mobile-nav-link" href="index.html" onclick="toggleMobileDrawer()">
+          <span>Home Dashboard</span>
+          <span class="material-symbols-outlined text-[18px]" style="color: var(--outline);">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link active" href="under-construction.html" onclick="toggleMobileDrawer()">
+          <span>Services Portfolio</span>
+          <span class="material-symbols-outlined text-[18px]" style="color: var(--outline);">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link" href="under-construction.html" onclick="toggleMobileDrawer()">
+          <span>Branch Locator</span>
+          <span class="material-symbols-outlined text-[18px]" style="color: var(--outline);">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link" href="under-construction.html" onclick="toggleMobileDrawer()">
+          <span>About Firm &amp; CA Panel</span>
+          <span class="material-symbols-outlined text-[18px]" style="color: var(--outline);">chevron_right</span>
+        </a>
+      </div>
+
+      <div style="margin-top: auto; padding-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <a class="btn-submit-callback" href="tel:+918778949661" style="background-color: var(--primary); margin: 0;">
+          <span class="material-symbols-outlined text-[18px]">call</span>
+          <span>Emergency Tax Desk</span>
+        </a>
+        <div style="padding: 0.75rem; border-radius: var(--radius-md); background-color: var(--surface-container); text-align: center;" class="font-label-caps text-on-surface-variant">
+          Licensed Chartered Tax Practitioners • TN Region
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content: Under Construction Hero -->
+  <main class="page-main">
+    <section class="construction-hero">
+      <div class="construction-card">
+        <!-- Icon Halo -->
+        <div class="construction-icon-halo">
+          <span class="material-symbols-outlined text-[44px]">engineering</span>
+        </div>
+
+        <!-- Status Badge -->
+        <span class="construction-badge">
+          <span class="material-symbols-outlined text-[15px]">construction</span>
+          Under Active Development
+        </span>
+
+        <!-- Headline & Description -->
+        <div class="flex flex-col gap-2">
+          <h1 class="font-headline-xl text-primary" style="font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 800; line-height: 1.2;">
+            This Page is Under Construction
+          </h1>
+          <p class="font-body-md text-on-surface-variant" style="line-height: 1.6; max-width: 32rem; margin: 0 auto;">
+            We are currently updating this section with detailed statutory schedules, filing workflows, and documentation checklists. Our chartered advisory desk is fully active and ready to assist you.
+          </p>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="construction-actions">
+          <a class="btn-primary-hero" href="index.html" style="background-color: var(--primary); display: inline-flex; justify-content: center;">
+            <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+            <span>Back to Home</span>
+          </a>
+          <a class="btn-primary-hero" href="index.html#instant-callback" style="background-color: var(--secondary); display: inline-flex; justify-content: center;">
+            <span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+            <span>Request Callback</span>
+          </a>
+        </div>
+
+        <!-- 4 Chamber Availability Strip -->
+        <div class="chamber-mini-strip">
+          <div class="chamber-mini-item">
+            <span class="chamber-mini-city">Chennai</span>
+            <span class="chamber-mini-loc">T. Nagar</span>
+          </div>
+          <div class="chamber-mini-item">
+            <span class="chamber-mini-city">Madurai</span>
+            <span class="chamber-mini-loc">KK Nagar</span>
+          </div>
+          <div class="chamber-mini-item">
+            <span class="chamber-mini-city">Ambur</span>
+            <span class="chamber-mini-loc">Bypass Rd</span>
+          </div>
+          <div class="chamber-mini-item">
+            <span class="chamber-mini-city">Coimbatore</span>
+            <span class="chamber-mini-loc">RS Puram</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center gap-2">
+            <img alt="Quality Tax Service Brand Logo" class="brand-logo-img" style="height: 1.75rem;" src="assets/images/QTS-logo-noBG.png">
+            <span class="font-headline-lg font-bold text-on-primary">Quality Tax Service</span>
+          </div>
+          <p class="font-body-sm text-primary-fixed-dim" style="line-height: 1.6; max-width: 48rem;">
+            Peer-reviewed Chartered Accountancy &amp; Tax Advisory firm providing institutional-grade corporate auditing, GST filings, company incorporations, and IP registration across Tamil Nadu.
+          </p>
+        </div>
+
+        <div class="footer-grid">
+          <div class="flex flex-col gap-2">
+            <span class="font-headline-sm text-secondary-fixed font-bold">Regional Offices</span>
+            <div class="flex flex-col gap-1 font-data-tabular" style="color: var(--surface-container-high); font-size: 0.875rem;">
+              <p><span class="font-bold text-on-primary">Chennai:</span> 45, G.N. Chetty Rd, T. Nagar</p>
+              <p><span class="font-bold text-on-primary">Madurai:</span> 12B, 80 Feet Rd, KK Nagar</p>
+              <p><span class="font-bold text-on-primary">Ambur:</span> 78, Bypass Main Rd</p>
+              <p><span class="font-bold text-on-primary">Coimbatore:</span> 104, D.B. Road, RS Puram</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <span class="font-headline-sm text-secondary-fixed font-bold">Statutory Practices</span>
+            <ul class="flex flex-col gap-1" style="color: var(--surface-container-high); font-size: 0.875rem;">
+              <li>• Private Limited &amp; LLP Setup</li>
+              <li>• ITR-1 to ITR-7 Corporate Audit</li>
+              <li>• Monthly GST Filings &amp; Litigations</li>
+              <li>• Trademark, FSSAI &amp; ISO Compliance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-tag-strip">
+          <span>GST Consultant Chennai</span>
+          <span>•</span>
+          <span>ITR Filing Madurai</span>
+          <span>•</span>
+          <span>Company Registration Ambur</span>
+          <span>•</span>
+          <span>Trademark Attorney Coimbatore</span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-2 font-label-caps text-surface-variant" style="padding-top: 0.5rem;">
+          <p>© 2024 Quality Tax Service. All rights reserved.</p>
+          <div class="flex items-center gap-3 font-semibold text-secondary-fixed">
+            <span>ICAI Affiliated</span>
+            <span>•</span>
+            <span>MSME Certified</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating WhatsApp Action -->
+  <aside class="floating-whatsapp">
+    <a class="whatsapp-btn" href="https://wa.me/918778949661?text=Hello%20Quality%20Tax%20Service,%20I%20need%20tax%20consultation." target="_blank">
+      <span class="material-symbols-outlined text-[24px]">chat</span>
+      <div class="flex flex-col text-left" style="line-height: 1;">
+        <span style="font-size: 0.75rem; font-weight: 700;">WhatsApp CA</span>
+        <span style="font-size: 0.5625rem; opacity: 0.9;">Online • Direct advisory</span>
+      </div>
+    </a>
+  </aside>
+
+  <!-- Bottom App Navigation Bar (Fixed for Mobile) -->
+  <nav class="bottom-app-nav pb-safe">
+    <div class="bottom-nav-inner">
+      <a class="bottom-nav-item" href="index.html">
+        <span class="material-symbols-outlined text-[22px]">account_balance</span>
+        <span class="bottom-nav-label">Home</span>
+      </a>
+      <a class="bottom-nav-item active" href="under-construction.html">
+        <span class="material-symbols-outlined text-[22px]">receipt_long</span>
+        <span class="bottom-nav-label">GST &amp; Tax</span>
+      </a>
+      <a class="bottom-nav-item" href="under-construction.html">
+        <span class="material-symbols-outlined text-[22px]">domain_add</span>
+        <span class="bottom-nav-label">Incorporate</span>
+      </a>
+      <a class="bottom-nav-item" href="under-construction.html">
+        <span class="material-symbols-outlined text-[22px]">verified</span>
+        <span class="bottom-nav-label">Licenses</span>
+      </a>
+      <a class="bottom-nav-item" href="under-construction.html">
+        <span class="material-symbols-outlined text-[22px]">location_city</span>
+        <span class="bottom-nav-label">Branches</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Standard Vanilla JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

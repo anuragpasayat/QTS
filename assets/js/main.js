@@ -71,15 +71,6 @@ function switchHeroSlide(index) {
     }
   });
 
-  // Update Quick-Jump Pill Buttons immediately
-  const pillButtons = document.querySelectorAll('.hero-pill-btn');
-  pillButtons.forEach((btn, idx) => {
-    if (idx === index) {
-      btn.classList.add('active');
-    } else {
-      btn.classList.remove('active');
-    }
-  });
 
   // Sequential Animation: Fade out present slide text first, then appear next slide text
   if (currentSlide && currentSlide !== nextSlide && currentSlide.style.display !== 'none') {
