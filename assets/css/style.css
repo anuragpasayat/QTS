@@ -1594,15 +1594,57 @@ select.form-select option:not([value=""]) {
   gap: 0.75rem;
 }
 
+.feature-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.feature-card-header .stat-icon-wrapper {
+  flex-shrink: 0;
+}
+
+.feature-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+  line-height: 1.25;
+}
+
 .process-card {
   background-color: var(--surface-container-lowest);
-  padding: 1.35rem;
+  padding: 1.25rem 1.15rem;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-light);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+
+.process-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.process-card-header .step-badge {
+  flex-shrink: 0;
+}
+
+.process-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+@media (min-width: 1280px) {
+  .process-card-title {
+    font-size: 1.15rem;
+  }
 }
 
 .step-badge {
