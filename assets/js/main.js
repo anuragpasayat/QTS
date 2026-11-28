@@ -71,6 +71,16 @@ function switchHeroSlide(index) {
     }
   });
 
+  // Update Background Image Slides (h1, h2, h3, h4)
+  const bgSlides = document.querySelectorAll('.hero-bg-slide');
+  bgSlides.forEach((bg, idx) => {
+    if (idx === index) {
+      bg.classList.add('active');
+    } else {
+      bg.classList.remove('active');
+    }
+  });
+
 
   // Sequential Animation: Fade out present slide text first, then appear next slide text
   if (currentSlide && currentSlide !== nextSlide && currentSlide.style.display !== 'none') {
